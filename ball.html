@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function() {
+			$("#ball").click(function() {
+				$("#ball").fadeOut(100);
+				$("#ball_2").fadeIn(100);
+			});
+			$("#ball_2").click(function() {
+				$("#ball_2").fadeOut(100);
+				$("#ball").fadeIn(100);
+			});
+		});
+	</script>
+	<title>Квадрат</title>
+</head>
+<body>
+	<div class="style">
+		<h1>Мячик!</h1>
+		<button id="stop">Нажмите, чтобы остановить!</button>
+		<button onclick="location.href='index.html';">Квадрат!</button>
+		<button onclick="location.href='ball_1.html';">Другой способ!(1)</button>
+		<button onclick="location.href='ball_2.html';">Другой способ!(2)</button>
+		<button onclick="location.href='ball_3.html';">Другой способ!(3)</button>
+	</div>
+
+	<div class="row style">
+		<div class="column">
+			<h2 align="center">Here</h2>
+			<div id="ball"> <img src="img/ball.jpg" alt="Avatar"></div>
+		</div>
+		<div class="column"">
+			<h2 align="center">There</h2>
+			<div id="ball_2" class="none"> <img src="img/ball.jpg" alt="Avatar"></div>
+		</div>
+	</div>
+
+</body>
+</html>

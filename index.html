@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function() {
+			$("#square").mouseenter(function() {
+				$("#square").animate({
+					left: '150px',
+					marginTop: '150px',
+					width: '+=200px',
+					height: '+=200px',
+				}, 4000);
+				$("#square").fadeOut(100);
+			});
+			$("#stop").click(function() {
+				$("#square").stop();
+			})
+		})
+	</script>
+	<title>Квадрат</title>
+</head>
+<body>
+	<div class="style">
+		<h1>Анимированный квадрат!</h1>
+		<button id="stop">Нажмите, чтобы остановить!</button>
+		<button onclick="location.href='index.html';">Нажмите, чтобы начать заново!</button>
+		<button onclick="location.href='ball.html';">Мячик!</button>
+	</div>
+	<div id="square"></div>
+
+</body>
+</html>
