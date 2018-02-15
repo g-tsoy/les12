@@ -13,8 +13,8 @@
 					marginTop: '150px',
 					width: '+=200px',
 					height: '+=200px',
-				}, 4000);
-				$("#square").fadeOut(100);
+				}, 4000).fadeOut(5000);
+				// you should chain effects, and increase fadeOut time
 			});
 			$("#stop").click(function() {
 				$("#square").stop();
@@ -26,9 +26,10 @@
 <body>
 	<div class="style">
 		<h1>Анимированный квадрат!</h1>
-		<button id="stop">Нажмите, чтобы остановить!</button>
-		<button onclick="location.href='index.html';">Нажмите, чтобы начать заново!</button>
-		<button onclick="location.href='ball.html';">Мячик!</button>
+		<!-- Better to use links  -->
+		<a id="stop" href="#">Нажмите, чтобы остановить!</a>
+		<a href="index.html">Нажмите, чтобы начать заново!</a>
+		<a href="ball.html">Мячик!</a>
 	</div>
 	<div id="square"></div>
 

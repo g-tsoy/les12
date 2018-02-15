@@ -1,7 +1,25 @@
 
 .style{
 	margin: 20px;
-}	
+}
+
+a {
+  border-radius: 10px;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:link, a:visited {
+  background-color: #f44336;
+}
+
+
+a:hover, a:active {
+  background-color: red;
+}
 
 /*square*/
 #square {
@@ -13,6 +31,7 @@
 	margin-top: 10px;
 	position: absolute;
 }
+
 
 /*fields*/
 * {
@@ -33,6 +52,7 @@
     clear: both;
 }
 
+/* well done!*/
 @media (max-width: 600px) {
     .column {
         width: 100%;
