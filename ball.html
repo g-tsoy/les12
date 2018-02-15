@@ -2,21 +2,18 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<!-- need this meta to display fiendly on mobile -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script>
 	<script>
 		$(document).ready(function() {
 			$("#ball").click(function() {
-				$("#ball").fadeOut(1000);
-				$("#ball_2").fadeIn(1000);
-				// set bigget time, it looks better
+				$("#ball").fadeOut(100);
+				$("#ball_2").fadeIn(100);
 			});
 			$("#ball_2").click(function() {
-				$("#ball_2").fadeOut(1000);
-				$("#ball").fadeIn(1000);
+				$("#ball_2").fadeOut(100);
+				$("#ball").fadeIn(100);
 			});
 		});
 	</script>
